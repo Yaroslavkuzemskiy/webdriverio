@@ -1,0 +1,26 @@
+{
+  "name": "webdriverio-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "dev": "./node_modules/.bin/wdio ./test/drew-dev/config/wdio_drew-dew.conf.js",
+    "stage": "./node_modules/.bin/wdio ./test/drew-stage/config/wdio_drew-stage.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.4.6",
+    "@wdio/local-runner": "^6.4.6",
+    "@wdio/mocha-framework": "^6.4.0",
+    "@wdio/selenium-standalone-service": "^6.4.0",
+    "@wdio/spec-reporter": "^6.4.0",
+    "@wdio/sync": "^6.4.6",
+    "wdio-image-comparison-service": "^1.13.6"
+  },
+  "dependencies": {
+    "chromedriver": "^85.0.0"
+  }
+}
